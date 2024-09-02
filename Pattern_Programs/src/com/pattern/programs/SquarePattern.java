@@ -8,7 +8,7 @@ public class SquarePattern {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("enter a number..");
 		int num=sc.nextInt();
-		for(int i=0;i<=num;i++)
+		for(int i=1;i<=num;i++)
 		{
 			for(int j=0;j<=num;j++)
 			{
