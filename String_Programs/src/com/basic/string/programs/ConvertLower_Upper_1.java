@@ -8,9 +8,8 @@ public class ConvertLower_Upper_1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter First String");
 		String str1 = sc.nextLine();
-		String str=str1.toLowerCase();
+		String str = str1.toLowerCase();
 		System.out.println(str);
-		
 
 	}
 

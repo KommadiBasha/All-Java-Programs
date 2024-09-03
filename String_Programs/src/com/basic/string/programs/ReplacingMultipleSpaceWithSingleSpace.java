@@ -8,14 +8,12 @@ public class ReplacingMultipleSpaceWithSingleSpace {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter a string...");
 		String str = sc.nextLine();
-		String store="";
-		for(int i=0;i<str.length();i++)
-		{
-			if(!(str.charAt(i)==' '&&  str.charAt(i+1)==' '))
-			{
-				store+=str.charAt(i);
+		String store = "";
+		for (int i = 0; i < str.length(); i++) {
+			if (!(str.charAt(i) == ' ' && str.charAt(i + 1) == ' ')) {
+				store += str.charAt(i);
 			}
-			
+
 		}
 		System.out.println(store);
 	}
