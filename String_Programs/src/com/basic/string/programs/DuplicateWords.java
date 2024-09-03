@@ -8,20 +8,21 @@ public class DuplicateWords {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter a string...");
 		String str = sc.nextLine();
-		int count=0;
-		String store="";
-		for(int i=0;i<str.length();i++)
-		{
-			if(i==0 && str.charAt(i)!=' ' || (str.charAt(i)!=' ' && str.charAt(i-1)==' '))		
-			{
-				store+=str.charAt(i);
-				count++;
-			}	
+		str = str.toLowerCase();
+		int count;
+		String[] arrStr = str.split(" ");
+		String store = "";
+		for (int i = 0; i < str.length(); i++) {
+			count = 1;
+			for (int j = i + 1; j < arrStr.length; j++) {
+				if (arrStr[i].equals(arrStr[j])) {
+					count++;
+					arrStr[j]="0";
+				}
+			}
+		if (count >1 && arrStr[i]!="0") {
+			System.out.println(arrStr[i]);
 		}
-		if(count==1)
-		{
-			System.out.println(store);	
 		}
-		
 	}
 }
