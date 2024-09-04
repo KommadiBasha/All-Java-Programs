@@ -15,9 +15,7 @@ public class ArmstrongNumbersMtoN_1 {
 			int number2 = x;
 			int sum = 0;
 			int count = 0;
-
 			while (number1 > 0) {
-
 				count++;
 				number1 /= 10;
 			}
