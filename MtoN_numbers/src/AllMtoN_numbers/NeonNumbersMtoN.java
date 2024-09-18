@@ -2,7 +2,7 @@ package AllMtoN_numbers;
 
 import java.util.Scanner;
 
-public class ArmstrongNumbersMtoN_2 {
+public class NeonNumbersMtoN {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter start number...");
@@ -10,31 +10,21 @@ public class ArmstrongNumbersMtoN_2 {
 		System.out.println("enter end number...");
 		int endNumber = sc.nextInt();
 		for (int x = startNumber; x <= endNumber; x++) {
-			int num1=x;
-			int num2=x;
+			int num=x;
+			int fact=num*num;
 			int sum=0;
-			int count=0;
-			for (int y =0; num1>0; y++) {
-				count++;
-				num1/=10;
+			int last=0;
+			while(fact>0)
+			{
+			last=fact%10;
+			sum+=last;
+			fact/=10;
 			}
-				while(num2>0)
-				{
-					int fact=1;
-					int last =num2%10;
-					for(int i=1;i<=count;i++)
-					{
-						fact*=last;
-					}
-					num2/=10;
-					sum+=fact;
-				}
-			if(x==sum)
+			//System.out.print(last+" ");
+			if(sum==x)
 			{
 				System.out.print(x+" ");
 			}
-			
 		}
 	}
-			
 }
