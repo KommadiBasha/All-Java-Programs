@@ -10,7 +10,7 @@ public class SquarePattern {
 		int num=sc.nextInt();
 		for(int i=1;i<=num;i++)
 		{
-			for(int j=0;j<=num;j++)
+			for(int j=1;j<=num;j++)
 			{
 				System.out.print("*");
 			}
